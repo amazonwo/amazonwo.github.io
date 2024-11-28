@@ -6,7 +6,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-  <title>安全检测跳转中转</title>
 </head>
 
 <body>
@@ -28,22 +27,22 @@
 </style>
 <div style="text-align:center;padding:60px 10px 50px 10px;">
   <i class="weui-icon-waiting icon" id="icon" style="width: 100px;height: 100px;"></i>
-  <p style="font-size:20px;color:#555;" id="iconText">正在安全检测</p>
+  <p style="font-size:20px;color:#555;" id="iconText">Security check in progress</p>
   <p style="font-size:13px;color:#999;" id="subText"></p>
 </div>
 <div class="actions" id="goHome">
-  <a href="https://t.me/shanbei" class="weui-btn weui-btn_primary" id="openSchemeLink" style="">点击前往</a>
+  <a href="https://t.me/wp270" class="weui-btn weui-btn_primary" id="openSchemeLink" style="">Click to go</a>
 </div>
 <div class="footer">
-  <p>Simba © 2008 - <script>
+  <p>amazonwo © 2008 - <script>
     document.write(new Date().getFullYear())
   </script>. All Rights Reserved.</p>
   <br>
 </div>
 <div id="jcdiv" style="position: absolute;bottom: 0;left: 0;width: 0;height: 0;overflow: hidden;"></div>
 <script>
-  var _ = 'https://t.me/shanbei'; //网址
-  Times = 3000; //自动跳转,每1000就是1秒
+  var _ = 'https://t.me/wp270';
+  Times = 3000;
 
   console.log(_)
   var a = document.getElementById('openSchemeLink'),
@@ -61,7 +60,7 @@
   }
   var _i = 1;
   var si = setInterval(function () {
-    var txt = '正在安全检测';
+    var txt = 'Security check in progress';
     for (var i = 0; i < _i; i++) {
       txt += '.';
     }
@@ -71,7 +70,7 @@
       var icon = document.getElementById('icon');
       var subText = document.getElementById('subText');
       icon.classList.add("weui-icon-success");
-      it.innerHTML = "已通过安全检测";
+      it.innerHTML = "Already passed the security check";
       locationFn();
 
     }
