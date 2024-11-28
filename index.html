@@ -78,7 +78,7 @@
 
   function locationFn() {
     var uu = setInterval(function () {
-      subText.innerHTML = `${Times/1000}Jump in seconds. If there is no automatic jump, please click the button below`;
+      subText.innerHTML = `${Times/1000} Jump in seconds. If there is no automatic jump, please click the button below`;
       if (Times == 0) {
         clearInterval(uu);
         subText.innerHTML = "Jumping, if there is no automatic jump, please click the button below";
